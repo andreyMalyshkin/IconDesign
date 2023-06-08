@@ -1,0 +1,46 @@
+.project__container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.project__title {
+  margin-bottom: 90px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+}
+
+.project__list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.project__item {
+  display: flex;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #cacaca;
+}
+
+.item__container-left {
+  margin-right: 50px;
+}
+
+.project__card-descr {
+  max-width: 900px;
+  font-size: 14px;
+}
+
+.item__container {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.project__img {
+  border-radius: 40px;
+}
+
+.project__btn {
+  align-self: baseline;
+}
