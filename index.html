@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="icon" type="image/x-icon" href="./img/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/fav/favicon-16x16.png">
+    <link rel="manifest" href="./img/fav/site.webmanifest">
     <link rel="stylesheet" href="./css/keyframes.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media.css">
     <link rel="stylesheet" href="./css/burger.css">
+    <script defer src="./js/call.js"></script>
     <title>Icon-design</title>
 </head>
 <body>
@@ -27,10 +31,10 @@
           <nav class="header__nav">
             <ul class="list-reset nav__list flex">
               <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
-              <li class="nav__item"><a href="./src/about_us.html" class="nav__link">О нас</a></li>
-              <li class="nav__item"><a href="./src/project.html" class="nav__link">Проекты</a></li>
-              <li class="nav__item"><a href=".//src/services.html" class="nav__link">Услуги</a></li>
-              <li class="nav__item"><a href="./src/contacts.html" class="nav__link">Контакты</a></li>
+              <li class="nav__item"><a href="./about_us.html" class="nav__link">О нас</a></li>
+              <li class="nav__item"><a href="./project.html" class="nav__link">Проекты</a></li>
+              <li class="nav__item"><a href="./services.html" class="nav__link">Услуги</a></li>
+              <li class="nav__item"><a href="./contacts.html" class="nav__link">Контакты</a></li>
             </ul>
           </nav>
           <button class="btn-reset burger">
@@ -42,8 +46,18 @@
       </div>
     </header>
 
-
     <main class="main">
+
+
+        <button class="btn-reset call-back__btn">
+          <ul class="list-reset call-back__list">
+            <li class="call-back__item"><a aria-label="Chat on WhatsApp" href="https://wa.me/+77776277896" class="whats-btn"><img alt="Чат в WhatsApp" src="./img/whatsapp.svg" /> </a></li>
+            <li class="call-back__item"><a href="tel:+77776277896" class="call-back__item__tel"><img src="./img/free-icon-phone-call-126509.png" alt="Позвонить" ></a></li>
+            <li class="call-back__item"><a href="https://t.me/alinavolz" ><img src="./img/tg.svg" alt="Позвонить" ></a></li>
+          </ul>
+        </button>
+
+
       <section class="section-offset hero">
         <div class="container hero__content flex">
             <picture>
@@ -97,7 +111,7 @@
       <section class="section-offset project">
         <div class="container project__content">
           <div class="flex project_top">
-            <a href="./src/project.html" class="project__link">Все проекты →</a>
+            <a href="" class="project__link">Все проекты →</a>
           </div>
           <div class="project__buttom-container">
             <ul class="list-reset project__list flex">
@@ -106,7 +120,7 @@
                   <picture>
                     <img class="card-border" src="./img/first-project.png" alt="">
                   </picture>
-                  <a href="./src/first-project.html" class="card__link">Посмотреть проект →</a>
+                  <a href="#" class="card__link">Посмотреть проект →</a>
                 </div>
               </li>
               <li class="project__item">
@@ -114,7 +128,7 @@
                   <picture>
                     <img class="card-border" src="./img/second-project.png" alt="">
                   </picture>
-                  <a href="./src/second-project.html" class="card__link">Посмотреть проект →</a>
+                  <a href="#" class="card__link">Посмотреть проект →</a>
                 </div>
               </li>
               <li class="project__item">
@@ -122,7 +136,7 @@
                   <picture>
                     <img class="card-border" src="./img/last-project.png" alt="">
                   </picture>
-                  <a href="./src/last-project.html" class="card__link">Посмотреть проект →</a>
+                  <a href="#" class="card__link">Посмотреть проект →</a>
                 </div>
               </li>
             </ul>
