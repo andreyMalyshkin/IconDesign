@@ -40,6 +40,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="stylesheet" href="./css/burger.css">
     <script defer src="./js/call.js"></script>
     <script defer src="./js/button-anim.js"></script>
+    <script defer src="./quiz.js"></script>
     <title>Icon-design</title>
 </head>
 <body>
@@ -96,13 +97,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <img src="./img/left-photo.png" alt="">
             </picture>
           <div class="hero__right-container flex">
-            <div class="right-content">
+            <div class="right-content mobile-right-content-first">
               <h1 class="section-title hero__title">Бюро интерьерного дизайна Indesign</h1>
               <h2 class="section-title hero__title-second">Сочетаем эстетику и функциональность</h2>
             </div>
             <div class="right-content">
-              <p class="section-descr hero__decr">Наша команда дизайнеров и проектировщиков  создает жилые и коммерческие пространства, дома и открытые веранды</p>
-                <a href="#call" class="btn-reset hero__btn">Записаться на консультацию</a>
+              <p class="section-descr hero__decr">Пройдите тест, узнайте стоимость дизайн-проекта и получите в подарок 1 месяц авторского надзора</p>
+                <a href="#call" class="btn-reset hero__btn">Пройти тест</a>
             </div>
           </div>
         </div>
@@ -142,6 +143,80 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
         </div>
       </section>
+      <section class="section-offset quiz">
+        <div class="container quiz__container">
+          <div class=" quiz__content" id="quiz">
+            <div class="quiz-header">
+              <h2 class="section-title quiz__title" id="question">Квиз вопрос</h2>
+              <form class="quiz-container" id="list">
+                <label class="label-wrap" id="item1">
+                    <input type="radio" name="answer" id="a" class="answer">
+                    <img src="./img/quiz/neo.jpg" alt="" class="quiz-img" id="img-a">
+                    <label for="a" id="a_text">Question</label>
+                </label>
+                <label class="label-wrap" id="item2">
+                    <input type="radio" name="answer" id="b" class="answer">
+                    <img src="./img/quiz/modern.jpg" alt="" class="quiz-img" id="img-b">
+                    <label for="b" id="b_text">Question</label>
+                </label>
+                <label class="label-wrap" id="item3">
+                    <input type="radio" name="answer" id="c" class="answer">
+                    <img src="./img/quiz/eco.jpg" alt="" class="quiz-img" id="img-c">
+                    <label for="c" id="c_text">Question</label>
+                </label>
+                <label class="label-wrap" id="item4">
+                    <input type="radio" name="answer" id="d" class="answer">
+                    <img src="./img/quiz/japan.jpg" alt="" class="quiz-img">
+                    <label for="c" id="d_text">Question</label>
+                </label>
+                <label class="label-wrap" id="item5">
+                  <input type="radio" name="answer" id="e" class="answer">
+                  <img src="./img/quiz/artdec.jpg" alt="" class="quiz-img">
+                  <label for="c" id="e_text">Question</label>
+                </label>
+                <label class="label-wrap" id="item6">
+                  <input type="radio" name="answer" id="f" class="answer">
+                  <img src="./img/quiz/mini.jpg" alt="" class="quiz-img">
+                  <label for="c" id="f_text">Question</label>
+                </label>
+              </form>
+              <input type="text" name="square" id="square">
+            </div>
+            <button id="submit">Далее</button>
+          </div>
+          <div class="call__container quiz__call" id="quiz-call">
+            <form id="form-contact" method="POST" class="call__form contact-form" autocomplete="off" enctype="multipart/form-data">
+              <div class="preloader"></div>
+
+              <!-- Поле с именем -->
+              <div class="contact-form__input-wrapper contact-form__input-wrapper_name">
+                <input name="name" type="text" class="call__input contact-form__input contact-form__input_name"
+                       placeholder="Введите ваше имя">
+              </div>
+
+              <!-- Поле с телефоном -->
+              <div class="contact-form__input-wrapper contact-form__input-wrapper_phone">
+                <input name="phone" type="tel" class="call__input contact-form__input contact-form__input_phone"
+                       placeholder="Введите ваш телефон">
+              </div>
+              <!-- Поле с городом -->
+              <div class="contact-form__input-wrapper contact-form__input-wrapper_phone">
+                <input name="city" type="text" class="call__input contact-form__input contact-form__input_city"
+                       placeholder="Город">
+              </div>
+
+              <!--Поле с темой в письме-->
+              <input name="theme" type="hidden" class="contact-form__input contact-form__input_theme"
+                     value="заявка с сайта IconDesign">
+
+              <!--Кнопка отправки формы-->
+              <button type="submit" class="call__submit btn-reset contact-form__button">Отправить</button>
+              <p class="contact-form__message"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+
       <section class="section-offset approach">
         <div class="container approach__content">
           <h2 class="section-title approach__title">Этапы работы </h2>

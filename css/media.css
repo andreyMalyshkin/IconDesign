@@ -98,7 +98,9 @@
 
 
   .project__item {
+    display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .item__container-left {
@@ -135,6 +137,14 @@
 }
 
 @media ( max-width: 576px) {
+  .design__btn{
+    text-align: center;
+  }
+
+  .hero__btn{
+    padding: 12px 25px;
+  }
+
   .leader__card-container-left{
     margin-right: 0;
     padding-left: 15px;
@@ -171,4 +181,9 @@
   .design__content {
     align-items: center;
   }
+
+  .mobile-right-content-first {
+    display: none;
+  }
 }
+

@@ -4,19 +4,39 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KTW5ZQH');</script>
+  <!-- End Google Tag Manager -->
+
   <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="icon" type="image/x-icon" href="../img/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/fav/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/fav/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/fav/favicon-16x16.png">
+  <link rel="manifest" href="./img/fav/site.webmanifest">
   <link rel="stylesheet" href="../css/keyframes.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/project__style.css">
   <link rel="stylesheet" href="../css/media.css">
   <link rel="stylesheet" href="../css/burger.css">
+  <script defer src="./js/call.js"></script>
+  <script defer src="./js/button-anim.js"></script>
   <title>Наши проекты</title>
 </head>
 <body>
+
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTW5ZQH"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
   <header class="header">
     <div class="container header__container flex">
-      <a href="" class="header__logo-link">
+      <a href="#" class="header__logo-link">
         <svg class="header-svg" width="63" height="51" viewBox="0 0 63 51" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M20.9833 3.43575C20.7833 3.66864 20.1033 4.45904 19.4766 5.18946C18.8466 5.91987 18.3333 6.52679 18.3333 6.5409C18.3333 6.55855 25.7533 6.5656 34.8266 6.56208L51.3166 6.55149V4.7872V3.02291L36.3333 3.01585L21.35 3.00527L20.9833 3.43575Z" fill="none"/>
           <path d="M9.46667 4.81192V6.55151L11.1 4.82251C12 3.87332 12.7333 3.08998 12.7333 3.08645C12.7333 3.07939 12 3.07586 11.1 3.07586H9.46667V4.81192Z" fill="none"/>
@@ -27,11 +47,11 @@
       <div class="header__point">
         <nav class="header__nav">
           <ul class="list-reset nav__list flex">
-            <li class="nav__item"><a href="../index.html" class="nav__link">Главная</a></li>
-            <li class="nav__item"><a href="../src/about_us.html" class="nav__link">О нас</a></li>
-            <li class="nav__item"><a href="..//src/project.html" class="nav__link">Проекты</a></li>
-            <li class="nav__item"><a href="..//src/services.html" class="nav__link">Услуги</a></li>
-            <li class="nav__item"><a href="../src/contacts.html" class="nav__link">Контакты</a></li>
+            <li class="nav__item"><a href="./index.html" class="nav__link">Главная</a></li>
+            <li class="nav__item"><a href="./about_us.html" class="nav__link">О нас</a></li>
+            <li class="nav__item"><a href="./project.html" class="nav__link">Проекты</a></li>
+            <li class="nav__item"><a href="./services.html" class="nav__link">Услуги</a></li>
+            <li class="nav__item"><a href="./contacts.html" class="nav__link">Контакты</a></li>
           </ul>
         </nav>
         <button class="btn-reset burger">
@@ -45,7 +65,13 @@
 
 
   <main class="main">
-
+    <button class="btn-reset call-back__btn">
+      <ul class="list-reset call-back__list">
+        <li class="call-back__item"><a aria-label="Chat on WhatsApp" href="https://wa.me/+77776277896" class="whats-btn"><img alt="Чат в WhatsApp" src="./img/whatsapp.svg" /> </a></li>
+        <li class="call-back__item"><a href="tel:+77776277896" class="call-back__item__tel"><img src="./img/free-icon-phone-call-126509.png" alt="Позвонить" ></a></li>
+        <li class="call-back__item"><a href="https://t.me/alinavolz" ><img src="./img/tg.svg" alt="Позвонить" ></a></li>
+      </ul>
+    </button>
     <section class="section-offset project">
       <div class="container project__container">
         <h1 class="section-title project__title">Наша цель - преобразовать и украсить ваше семейное пространство, отразить ваш стиль, вкусы, ценности и достижения.</h1>
@@ -62,7 +88,7 @@
               <p class="section-descr card__descr project__card-descr">В основу заложен современный интерьер с отсылками к стилю джапанди,
                 лаконичная мебель из натуральных материалов соседствует с современными формами кресел ярких цветов, а натуральный камень выйгрышно смотрится
                 на фоне традиционного французского паркета и классического белого оттенка стен.</p>
-                <form action="..//src/first-project.html" target="_blank">
+                <form action="../first-project.html" target="_blank">
                   <button class="btn-reset hero__btn project__btn">Посмотреть проект</button>
                 </form>
             </div>
@@ -77,7 +103,7 @@
               <p class="section-descr card__descr project__card-descr">Мы закладываем натуральный камень, дорогие породы дерева- самое важное для нас качество.
                 Так же в некоторых помещениях можно заметить нотки Турции. Заказчики любят путешествовать и их “второй дом”
                 находится именно на Средиземноморском побережье”</p>
-                <form action="..//src/second-project.html" target="_blank">
+                <form action="../second-project.html" target="_blank">
                   <button class="btn-reset hero__btn project__btn">Посмотреть проект</button>
                 </form>
             </div>
@@ -101,7 +127,7 @@
                 Заказчик- управленец в сфере продаж. Мужчина имеет отличный вкус и насмотренность. </p>
               <p class="section-descr card__descr project__card-descr">В своей квартире ему было важно иметь возможность проводить время в тишине и покое,
                 чтобы ничего не отвлекало и не мешало . Он попросил нас создать спокойный монохромный интерьер без постороннего «шума».</p>
-                <form action="..//src/last-project.html" target="_blank">
+                <form action="../last-project.html" target="_blank">
                   <button class="btn-reset hero__btn project__btn">Посмотреть проект</button>
                 </form>
             </div>
