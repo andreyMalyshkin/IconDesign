@@ -38,6 +38,38 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['city']) && !empty($_POST['city'])) {
       $txt .= "Город: " . strip_tags(trim(urlencode($_POST['city']))) . "%0A";
   }
+  if (isset($_POST['neoclassic']) && !empty($_POST['neoclassic'])) {
+    $txt .= "Неоклассика " . strip_tags(trim(urlencode($_POST['neoclassic']))) . "%0A";
+  }
+
+  if (isset($_POST['modern']) && !empty($_POST['modern'])) {
+    $txt .= "Модерн " . strip_tags(trim(urlencode($_POST['modern']))) . "%0A";
+  }
+  if (isset($_POST['eco']) && !empty($_POST['eco'])) {
+    $txt .= "Экостиль " . strip_tags(trim(urlencode($_POST['eco']))) . "%0A";
+  }
+  if (isset($_POST['japan']) && !empty($_POST['japan'])) {
+    $txt .= "Японский " . strip_tags(trim(urlencode($_POST['japan']))) . "%0A";
+  }
+  if (isset($_POST['art-deco']) && !empty($_POST['art-deco'])) {
+    $txt .= "Арт Деко " . strip_tags(trim(urlencode($_POST['art-deco']))) . "%0A";
+  }
+  if (isset($_POST['min']) && !empty($_POST['min'])) {
+    $txt .= "Минимализм " . strip_tags(trim(urlencode($_POST['min']))) . "%0A";
+  }
+  if (isset($_POST['square']) && !empty($_POST['square'])) {
+    $txt .= "Площадь " . strip_tags(trim(urlencode($_POST['square']))) . "%0A";
+  }
+  if (isset($_POST['fast']) && !empty($_POST['fast'])) {
+    $txt .= "Как можно скорее " . strip_tags(trim(urlencode($_POST['fast']))) . "%0A";
+  }
+  if (isset($_POST['week']) && !empty($_POST['week'])) {
+    $txt .= "В течение пару недель " . strip_tags(trim(urlencode($_POST['week']))) . "%0A";
+  }
+  if (isset($_POST['late']) && !empty($_POST['late'])) {
+    $txt .= "Не торопимся " . strip_tags(trim(urlencode($_POST['late']))) . "%0A";
+  }
+
 
     // Не забываем про тему сообщения
     if (isset($_POST['theme']) && !empty($_POST['theme'])) {

@@ -38,6 +38,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media.css">
     <link rel="stylesheet" href="./css/burger.css">
+    <script src="./js/quiz.js"></script>
     <script defer src="./js/call.js"></script>
     <script defer src="./js/button-anim.js"></script>
     <title>Icon-design</title>
@@ -102,7 +103,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div class="right-content">
               <p class="section-descr hero__decr">Наша команда дизайнеров и проектировщиков  создает жилые и коммерческие пространства, дома и открытые веранды</p>
-                <a href="#call" class="btn-reset hero__btn">Записаться на консультацию</a>
+                <a href="#quiz" class="btn-reset hero__btn">Пройдите тест</a>
             </div>
           </div>
         </div>
@@ -139,6 +140,97 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </a>
               </li>
             </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section-offset quiz">
+        <div class="container quiz__container">
+          <div class="call__container quiz__call" id="quiz-call">
+            <form id="form-contact" method="POST" class="call__form contact-form" autocomplete="off" enctype="multipart/form-data">
+              <div class="preloader"></div>
+
+              <!-- Поле с именем -->
+              <div class="contact-form__input-wrapper quiz-back-form contact-form__input-wrapper_name">
+                <input name="name" type="text" class="call__input contact-form__input contact-form__input_name"
+                       placeholder="Введите ваше имя">
+              </div>
+
+              <!-- Поле с телефоном -->
+              <div class="contact-form__input-wrapper quiz-back-form contact-form__input-wrapper_phone">
+                <input name="phone" type="tel" class="call__input contact-form__input contact-form__input_phone"
+                       placeholder="Введите ваш телефон">
+              </div>
+              <!-- Поле с городом -->
+              <div class="contact-form__input-wrapper quiz-back-form contact-form__input-wrapper_phone">
+                <input name="city" type="text" class="call__input contact-form__input contact-form__input_city"
+                       placeholder="Город">
+              </div>
+
+              <!--Поле с темой в письме-->
+              <input name="theme" type="hidden" class="contact-form__input contact-form__input_theme"
+                     value="заявка с квиза" >
+
+              <!--Кнопка отправки формы-->
+              <button type="submit" class="call__submit btn-reset contact-form__button" id="quiz-btn">Отправить</button>
+              <p class="contact-form__message"></p>
+              <div class=" quiz__content" id="quiz">
+                <h2 class="section-title quiz__title" id="question">Какой стиль Вам ближе/необходим</h2>
+                <div class="quiz-container">
+                  <label class="quiz__container-first-part" id="quizfirst">
+                    <div class="quiz-style" >
+                      <input type="radio" class="answer" name="neoclassic">
+                      <img src="./img/quiz/neo.jpg" alt="" class="quiz-img">
+                      <span>Неоклассика</span>
+                    </div>
+                    <div class="quiz-style" >
+                      <input type="radio" class="answer" name="modern">
+                      <img src="./img/quiz/modern.jpg" alt="" class="quiz-img">
+                      <span>Модерн</span>
+                    </div>
+                    <div class="quiz-style" >
+                      <input type="radio" class="answer" name="eco">
+                      <img src="./img/quiz/eco.jpg" alt="" class="quiz-img">
+                      <span>Экостиль</span>
+                    </div>
+                    <div class="quiz-style" >
+                      <input type="radio" class="answer" name="japan">
+                      <img src="./img/quiz/japan.jpg" alt="" class="quiz-img">
+                      <span>Японский</span>
+                    </div>
+                    <div class="quiz-style" >
+                      <input type="radio" class="answer" name="art-deco">
+                      <img src="./img/quiz/artdec.jpg" alt="" class="quiz-img">
+                      <span>Арт-Деко</span>
+                    </div>
+                    <div class="quiz-style" >
+                      <input type="radio" class="answer" name="min">
+                      <img src="./img/quiz/mini.jpg" alt="" class="quiz-img">
+                      <span>Минимализм</span>
+                    </div>
+                  </label>
+
+                  <div class="quiz-sqare">
+                    <input class="call__input quiz-sqare-input" type="text" name="square" id="square" placeholder="Введите количество квадратных метров объекта">
+                  <span class="call__submit btn-reset" id="square-btn">Далее</span>
+                  </div>
+
+                  <label class="quiz__container-last-part" id="quizlast">
+                    <div class="quiz-time">
+                      <input type="radio" class="lastAnswer" name="fast" id="a">
+                      <label class="quiz-last-label" for="a">Как можно скорее</label>
+                    </div>
+                    <div class="quiz-time">
+                      <input type="radio" class="lastAnswer" name="week" id="и">
+                      <label class="quiz-last-label" for="и">В течение пару недель</label>
+                    </div>
+                    <div class="quiz-time">
+                      <input type="radio" class="lastAnswer" name="late" id="с">
+                      <label class="quiz-last-label" for="с">Не торопимся</label>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </section>
@@ -212,7 +304,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <button type="submit" class="call__submit btn-reset contact-form__button">Отправить</button>
               <p class="contact-form__message"></p>
             </form>
-
           </div>
         </div>
       </section>

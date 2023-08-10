@@ -134,6 +134,8 @@
     padding-left: 0;
   }
 
+
+
 }
 
 @media ( max-width: 576px) {
@@ -185,5 +187,21 @@
   .mobile-right-content-first {
     display: none;
   }
+
+  .quiz__container-first-part {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .quiz-style {
+    display: block;
+    max-width: 40%;
+    width: 100%;
+  }
 }
 
+@media (max-width: 425px) {
+  .quiz-img {
+
+  }
+}
